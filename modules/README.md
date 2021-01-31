@@ -32,11 +32,11 @@ A Terraform module is a set of Terraform configuration files in a single directo
 
 `$ tree mini-module/
 .
-├── LICENSE
-├── README.md
-├── main.tf
-├── variables.tf
-├── outputs.tf
++-- LICENSE
++-- README.md
++-- main.tf
++-- variables.tf
++-- outputs.tf
 `
 
 In this case, when you run terraform commands from within the mini-module directory, the contents of that directory are considered the root module.
