@@ -30,14 +30,15 @@ Using modules can help reduce these errors. For example, you might create a modu
 
 A Terraform module is a set of Terraform configuration files in a single directory. Even a simple configuration consisting of a single directory with one or more `.tf ` files is a module. When you run Terraform commands directly from such a directory, it is considered the **root module**. So in this sense, every Terraform configuration is part of a module. You may have a simple set of Terraform configuration files such as:
 
+```
 $ tree mini-module/
 .
-+-- LICENSE
-+-- README.md
-+-- main.tf
-+-- variables.tf
-+-- outputs.tf
-
+|-- LICENSE
+|-- README.md
+|-- main.tf
+|-- variables.tf
+|-- outputs.tf
+```
 
 In this case, when you run terraform commands from within the mini-module directory, the contents of that directory are considered the root module.
 
